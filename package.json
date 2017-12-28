@@ -3,14 +3,35 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-eslint": "^8.1.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.0.17"
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "1.0.17",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.2.1",
+    "redux-thunk": "^2.2.0",
+    "standard": "^10.0.3",
+    "three": "^0.89.0",
+    "whatwg-fetch": "^2.0.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run dev",
+    "build": "webpack",
+    "dev": "webpack-dev-server --config ./wp.cfg/webpack.config.js --progress --colors --content-base build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "less-loader": "^4.0.5",
+    "style-loader": "^0.19.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0"
   }
 }
